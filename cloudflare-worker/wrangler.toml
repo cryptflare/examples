@@ -1,0 +1,11 @@
+name = "cryptflare-sdk-example"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Inject the service token via wrangler secret. Don't commit it.
+#   wrangler secret put CRYPTFLARE_SERVICE_TOKEN
+[vars]
+CRYPTFLARE_ORG = "org_..."
+CRYPTFLARE_WORKSPACE = "my-app"
+CRYPTFLARE_ENVIRONMENT = "production"
