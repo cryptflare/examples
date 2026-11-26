@@ -1,0 +1,13 @@
+name = "cryptflare-sdk-example"
+main = "src/index.ts"
+compatibility_date = "2026-04-01"
+# global_fetch_strictly_public: fetch() reaches only public addresses, never
+# Cloudflare's own network or internal hosts.
+compatibility_flags = ["nodejs_compat", "global_fetch_strictly_public"]
+
+# Inject the service token via wrangler secret. Don't commit it.
+#   wrangler secret put CRYPTFLARE_SERVICE_TOKEN
+[vars]
+CRYPTFLARE_ORG = "org_..."
+CRYPTFLARE_WORKSPACE = "my-app"
+CRYPTFLARE_ENVIRONMENT = "production"

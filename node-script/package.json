@@ -1,0 +1,11 @@
+{
+  "name": "cryptflare-sdk-example-node-script",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "@cryptflare/sdk": "^0.1.0"
+  }
+}
